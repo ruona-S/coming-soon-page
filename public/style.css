@@ -1,0 +1,102 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --other-color: #ffd700;
+}
+
+
+body, html {
+   font-family: 'Open Sans', sans-serif;
+}
+.coming-soon {
+   position: relative;
+   z-index: -1;
+}
+.container {
+   height: 100vh;
+}
+.container img {
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+   position: absolute;
+   z-index: -2;
+}
+h1 {
+   font-size: 2rem;
+   margin-bottom: 3em;
+}
+.container h1,h2,.arrow {
+   background: linear-gradient(#1ca9c9, white );
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   font-family: 'Abril Fatface', cursive;
+}
+.arrow .fa {
+   font-size: 2em;
+}
+.text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-20%);
+   text-align: center;
+   z-index: 1;
+}
+
+.countdown-container {
+   background: linear-gradient(#1ca9c9, #add8e6 );
+   height: 100vh;
+   width: 100%;
+   z-index: 3;
+}
+.countdown {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translateX(-50%) translateY(80%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   z-index: 4;
+}
+.countdown h1 {
+   font-family: 'Abril Fatface', cursive;
+   color: white;
+   margin-bottom: .8em;
+   font-size: 2rem;
+   border-bottom: solid 3px white;
+}
+.clock {
+   font-size: 4rem;
+}
+.timer {
+   text-transform: uppercase;
+}
+td {
+   padding: .5em .5em;
+   color: white;
+}
+.info {
+   text-align: center;
+   text-transform: uppercase;
+}
+.media {
+   font-size: 3rem;
+   padding: .5em .5em;
+   color: white;
+}
+
+
+
+
+@media (min-width: 800px) {
+   h1 {
+      font-size: 4rem;
+   }
+}
