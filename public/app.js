@@ -21,7 +21,7 @@ let scene = new ScrollMagic.Scene({
 
 function countdown () {
    const currentDate = new Date ();
-   const eventDate = new Date('2021-12-25');
+   const eventDate = new Date('2022-12-25');
    const currentTime = currentDate.getTime();
    const eventTime = eventDate.getTime();
    const timeLeft = eventTime - currentTime;
